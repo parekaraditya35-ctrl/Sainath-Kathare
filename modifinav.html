@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" media="all">
+      /* DESKTOP STYLES (Default) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.hamburger {
+  display: none; /* Hidden on desktop */
+  cursor: pointer;
+}
+
+/* MOBILE STYLES (Triggered at 768px wide or less) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop links */
+  }
+  
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+  
+  /* Styling the 3 lines */
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+}
+
+    </style>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <!-- HTML Structure -->
+<nav class="navbar">
+  <div class="logo">Logo</div>
+  
+  <!-- Desktop Links -->
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  
+  <!-- Hamburger Icon -->
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</nav>
+
+  </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        .contact-section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+
+        }
+
+        .subtitle {
+            color: gray;
+            margin-bottom: 40px;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            flex: 1;
+            min-width: 280px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            margin-bottom: 30px;
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        /* Form */
+        .contact-form {
+            flex: 1;
+            flex-direction: column;
+            min-width: 280px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .input-group textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        /* Floating label */
+        .input-group label {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            background: white;
+            padding: 0 5px;
+            color: gray;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus+label,
+        .input-group input:valid+label,
+        .input-group textarea:focus+label,
+        .input-group textarea:valid+label {
+            top: -8px;
+            font-size: 12px;
+            color: #000;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #000;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate sainath Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navdiv">
+            <img src="Screenshot 2026-06-27 094410-Photoroom.png"
+                alt="">
+            <div>
+                <font style="font-size: larger; color: antiquewhite;">SAINATH KATHARE</font>
+                <font style="color: goldenrod;">ADVOCATE</font>
+            </div>
+
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <!-- <li><a href="#">CASES</a></li> -->
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="practicearea.html">PRACTICE AREA</a></li>
+            <li><a href="blogs.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+        <!-- <input type="search" placeholder="Search...">  -->
+    </nav>
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Advocate</h1>
+            <p class="subtitle">Get legal advice or schedule a consultation</p>
+
+            <div class="contact-wrapper">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Details</h2>
+                    <p><strong>Name:</strong> Adv. Sainath Kathare</p>
+                    <p><strong>Phone:</strong> +91 9741220407</p>
+                    <p><strong>Email:</strong> sainathkathare444@gmail.com</p>
+                    <p><strong>Office:</strong> Aland Karnatak</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <input type="text" name="name" required>
+                            <label>Your name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email"  required>
+                            <label>Enter email</label>
+                        </div>
+
+
+                        <div class="input-group">
+                            <input type="text" name="subject" required>
+                            <label>Subject</label>
+                        </div>
+
+
+                        <div class="input-group">
+                            <textarea name="message" required></textarea>
+                            <label>Message</label>
+                        </div>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            const data = {
+                name: formData.get("name"),
+                email: formData.get("email"),
+                subject: formData.get("subject"),
+                message: formData.get("message")
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbwxhq_vUwAr04nrznOvvRIOQqpoN_D69ewM2cULKzlN9xD-e6tVEE763OK1O1Rz1-TUsQ/exec", {
+                method: "POST",
+                body: JSON.stringify(data)
+            })
+                .then(res => res.text())
+                .then(response => {
+                    alert("Form submitted successfully!");
+                    document.getElementById("contactForm").reset();
+                })
+                .catch(error => console.error("Error:", error));
+        });
+    </script>
+</body>
+
+</html>

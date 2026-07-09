@@ -1,0 +1,85 @@
+ .logo {
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .logo img {
+     height: 60px;
+     width: 45px;
+     margin-right: 12px;
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: #1b1205;
+     color: white;
+     padding: 0px 80px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+
+ /* Menu links (desktop) */
+ .nav-links {
+     display: flex;
+     list-style: none;
+     gap: 40px;
+ }
+
+ .nav-links a {
+     color: antiquewhite;
+     text-decoration: none;
+     border: 2px solid transparent;
+     border-radius: 10px;
+     padding: 5px 10px;
+     transition: 0.5s;
+ }
+
+ nav a:hover {
+     border-color: antiquewhite;
+     background-color: antiquewhite;
+     border-radius: 10px;
+     color: rgb(27, 18, 5);
+     /* box-shadow: inset; */
+     padding: 5px 10px;
+ }
+
+ /* Hide toggle image by default */
+ .menu-toggle {
+     width: 30px;
+     cursor: pointer;
+     display: none;
+ }
+
+ /* 📱 Mobile View */
+ @media (max-width: 1140px) {
+
+     .menu-toggle {
+         display: block;
+         /* show image */
+     }
+
+     .nav-links {
+         display: none;
+         flex-direction: column;
+         position: absolute;
+         top: 60px;
+         right: 0;
+         background: #222;
+         width: 100%;
+         text-align: center;
+     }
+
+     .nav-links.active {
+         display: flex;
+         /* show when clicked */
+     }
+
+     .nav-links li {
+         padding: 15px 0;
+     }
+ }

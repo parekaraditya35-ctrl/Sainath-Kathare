@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINATH KATHARE PRACTICE AREA</title>
+</head>
+<body>
+     <nav>
+        <div class="navdiv">
+            <img src="Screenshot 2026-06-27 094410-Photoroom.png"
+                alt="">
+            <div>
+                <font style="font-size: larger; color: antiquewhite;">SAINATH KATHARE</font>
+                <font style="color: goldenrod;">ADVOCATE</font>
+            </div>
+
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <!-- <li><a href="#">CASES</a></li> -->
+            <li><a href="#">EXPERIENCE</a></li>
+            <li><a href="practicearea.html">PRACTICE AREA</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+        <!-- <input type="search" placeholder="Search...">  -->
+    </nav>
+     <section class="sectionthree">
+        <center>
+            <div class="practiceareahead">
+                <h1>PRACTICE AREA</h1>
+            </div>
+
+            <img src="icons\balance_30dp_F19E39_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">
+        </center>
+        <div class="blogfather">
+            <div class="blog" id="civil"><img
+                    src="icons\clarify_60dp_F19E39_FILL0_wght400_GRAD0_opsz48.png"
+                    alt="">
+                <h3>CIVIL LITIGATION</h3>
+                <P>Handling disputes related to property,contracts,recovery,and civil matters.</P>
+            </div>
+            <div class="blog" id="crime"><img
+                    src="icons\gavel_60dp_F19E39_FILL0_wght400_GRAD0_opsz48.png"
+                    alt="">
+                <h3>CRIMINAL LAW</h3>
+                <P>Defending clients in criminal cases with strong legal representation.</P>
+            </div>
+            <div class="blog" id="family"><img
+                    src="icons\family_restroom_60dp_F19E39_FILL0_wght400_GRAD0_opsz48.png"
+                    alt="">
+                <h3>FAMILY LAW</h3>
+                <P>Providing legal assistance in matters of divorce,custody,maintenance & more</P>
+            </div>
+            <div class="blog" id="corp"><img
+                    src="icons\account_balance_60dp_F19E39_FILL0_wght400_GRAD0_opsz48.png"
+                    alt="">
+                <h3>CORPORATE LAW</h3>
+                <P>Advisng business on legal compliance,contracts and corporate matters.</P>
+            </div>
+            <div class="blog" id="consumer"><img
+                    src="icons\balance_60dp_F19E39_FILL0_wght400_GRAD0_opsz48.png"
+                    alt="">
+                <h3> CONSUMER LOW</h3>
+                <p>Protecting consumer rights and resolving disputes against unfair practices.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- scripting part begin -->
+ <script>
+document.getElementById("civil").addEventListener("click", function() {
+    window.location.href = "civillatigation.html"; 
+});
+
+document.getElementById("family").addEventListener("click", function() {
+    window.location.href = "familylow.html"; 
+});
+
+document.getElementById("corp").addEventListener("click", function() {
+    window.location.href = "corporatelow.html"; 
+});
+
+document.getElementById("consumer").addEventListener("click", function() {
+    window.location.href = "Counsumerlow.html"; 
+});
+
+document.getElementById("crime").addEventListener("click", function() {
+    window.location.href = "criminal.html"; 
+});
+</script>
+</body>
+</html>
