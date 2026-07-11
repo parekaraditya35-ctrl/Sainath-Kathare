@@ -766,7 +766,10 @@ nav div font{
     .texto a{
         display: none;
     }
-  
+  nav ul{
+    padding-top: 5px;
+    border-top: 1px solid antiquewhite;
+    flex-wrap: wrap;
 }
 
 /* Extra small screens */
