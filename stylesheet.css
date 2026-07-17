@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 .tole{
@@ -658,7 +656,7 @@ h2 {
     .slider img {
     height: 400px;
   }
-
+ 
   .texto {
     top: 10%;
     left: 5%;
@@ -763,13 +761,34 @@ nav div font{
     font-size: smaller;
 }
 @media (max-width:670px){
-    .texto a{
-        display: none;
+    .buttons{
+        margin-top: -38px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
-  nav ul{
+    .buttons a{
+        width: 60%;
+    }
+   nav ul{
     padding-top: 5px;
     border-top: 1px solid antiquewhite;
     flex-wrap: wrap;
+    /* align-items: left;
+    text-align: center;
+    flex-direction: column;
+    margin: 10% 50%; */
+  }
+  .texto{
+    margin-top: -20px;
+  }
+  .texto p{
+    font-size: 65%;
+  }
+  .one .two{
+    display: inline;
+  }
 }
 
 /* Extra small screens */
@@ -785,7 +804,9 @@ nav{
       .slider img {
     height: 250px;
   }
-
+  .texto{
+    margin-top: -10px;
+  }
   .texto p{
     /* top: 8%; */
     font-size: 5px;
@@ -807,9 +828,15 @@ nav{
     font-size:8px;
     height: 2.5cm;
   }
-  .texto a{
-    display: none;
-  }
+ .buttons{
+        margin-top: -120px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .buttons a{
+        width: 80%;
+    }
   .mainform{
     width: 90%;
   }
