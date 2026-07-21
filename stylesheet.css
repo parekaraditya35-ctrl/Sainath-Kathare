@@ -801,6 +801,9 @@ nav div font{
   .experience-section{
     flex-wrap: wrap;
  }
+    h2{
+        font-size: 23px;
+    }
 }
 
 /* Extra small screens */
