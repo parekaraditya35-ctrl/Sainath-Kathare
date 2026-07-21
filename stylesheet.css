@@ -761,6 +761,9 @@ nav div font{
     font-size: smaller;
 }
 @media (max-width:670px){
+     .texto{
+        margin-top: -15px;
+    }
     .buttons{
         margin-top: -38px;
         margin-bottom: 15px;
@@ -770,6 +773,12 @@ nav div font{
     }
     .buttons a{
         width: 60%;
+        font-size: small;
+        padding: 5px;
+
+    }
+    .two{
+        margin-top: -15px;
     }
    nav ul{
     padding-top: 5px;
